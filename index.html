@@ -1,136 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-           $(".topnav").on("click","a", function (event) {
-               event.preventDefault();
-               var id  = $(this).attr('href'),
-                   top = $(id).offset().top;
-               $('body,html').animate({scrollTop: top}, 1500);
-           });
-       });
-       </script>
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
     <div class="topnav">
-        <a class="active" href="#me">Me</a>
-        <a href="#summary">Summary</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
+      <a class="active" href="#me">Me</a>
+      <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
     </div>
     <div class="content">
-            <p align = "left" id = "title">Me:</p>
-            <div id="me">
-                <img src="img/8f22d879-7bc1-4bb2-bfc4-d579626781f2.jpg" alt="">
-                <p>Name:Artem</p>
-                <p>Surname:Dachevsky</p>
-            </div>
-            <div id="me">
-                <p>Contacts:</p>
-                <br>
-                <p><i class="fas fa-phone"></i> Phone number: + 375257916408</p>
-                <br>
-                <p><i class="fas fa-at"></i> Email: artemda4@gmail.com</p>
-                <br>
-                <p> <i class="fas fa-at"></i> Second Email: artemda459@gmail.com</p>
-                <br>
-                
-                <p><i class="fab fa-vk"></i> <a href="https://vk.com/id225671706" target="_blank">Click here</a> </p>
-            </div>
-            <div id="summary">
-                <p align = "left" id = "title">Summary:</p>
-                <blockquote>
-                    <p>My aim is to get deep knowledge of JavaScript and appropriate frameworks.My ambition is to grow up as a developer,
-                    create big and challenging projects and perform interesting tasks.I'm passionate and motivated to do my best,work in a team with other 
-                    programmers and get knowledge as fast as I can.
-                    </p>
-                </blockquote>
-            </div>
-            <div id="skills">
-                <p align = "left" id = "title">Skills:</p>
-                <div class="tab">
-                    <button class="tablinks" onmouseover="openTab(event, 'language')">Languages</button>
-                    <button class="tablinks" onmouseover="openTab(event, 'frameworks')">Frameworks</button>
-                    <button class="tablinks" onmouseover="openTab(event, 'methodology')">Methodology</button>
-                    <button class="tablinks" onmouseover="openTab(event, 'vcs')">VCS</button>
-                    <button class="tablinks" onmouseover="openTab(event, 'tools')">Tools</button>
-                  </div>
-                  
-                  <div id="language" class="tabcontent">
-                    <p>Java,JavaScript,C++,C#</p>
-                  </div>
-                  
-                  <div id="frameworks" class="tabcontent">
-                    <p>Spring framework,bootstrap,jQuery</p> 
-                  </div>
-                  
-                  <div id="methodology" class="tabcontent">
-                    <p>OOP,functional programming</p>
-                  </div>
-                  <div id="vcs" class="tabcontent">
-                    <p>Git</p>
-                  </div>
-                  <div id="tools" class="tabcontent">
-                    <p>WebStorm,GitHub DeskTop,VS Code...</p>
-                  </div>
-            </div>
-            <div id="experience">
-                <p align = "left" id = "title">Experience:</p>
-                
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Link</th>
-                    </tr>
-                    <tr>
-                        <td>MUniverse(Spring Boot)</td>
-                        <td><a href="https://github.com/DevandScorp/MUniverse_Boot" target="_blank">Click here</a></td>
-                    </tr>
-                    <tr>
-                            <td>MUniverse(Using JPA,JDBC and JSP)</td>
-                            <td><a href="https://github.com/DevandScorp/Muniverse" target="_blank">Click here</a></td>
-                    </tr>
-                    <tr>
-                            <td>Java Labs</td>
-                            <td><a href="https://github.com/DevandScorp/Labs" target="_blank">Click here</a></td>
-                    </tr>
-                </table>
-            </div>
-            <div id="education">
-                    <p align = "left" id = "title">Education:</p>
-                    <ul>
-
-                        <li>Programming:
-                            <ul>
-                                <li>JavaRush Course</li>
-                                <li>Algorithms, Part I,Coursera</li>
-                                <li>Codeacademy</li>
-                                <li>W3School:HTML,CSS,JS basics</li>
-                                <li>University programming classes</li>
-                            </ul>
-                        </li>
-                        <li>English:
-                                <ul>
-                                        <li>Tutor for 3 years</li>
-                                        <li>Public performances at school and University</li>
-                                </ul>
-                        </li>
-                    </ul>
-                </div>
-
-            
+      <p align = "left" id = "title">Me:</p>
+      <div id="me">
+        <img src="img/8f22d879-7bc1-4bb2-bfc4-d579626781f2.jpg" alt="">
+        <p>Name:Artem</p>
+        <p>Surname:Dachevsky</p>
+      </div>
+      <div id="me">
+        <p>Contacts:</p>
+        <br>
+        <p><i class="fas fa-phone"></i> Phone number: + 375257916408</p>
+        <br>
+        <p><i class="fas fa-at"></i> Email: artemda4@gmail.com</p>
+        <br>
+        <p> <i class="fas fa-at"></i> Second Email: artemda459@gmail.com</p>
+        <br>
+        <p><i class="fab fa-vk"></i> <a href="https://vk.com/id225671706" target="_blank">Click here</a> </p>
+      </div>
+      <div id="summary">
+        <p align = "left" id = "title">Summary:</p>
+        <blockquote>
+          <p>My aim is to get deep knowledge of JavaScript and appropriate frameworks.My ambition is to grow up as a developer,
+            create big and challenging projects and perform interesting tasks.I'm passionate and motivated to do my best,work in a team with other
+            programmers and get knowledge as fast as I can.
+          </p>
+        </blockquote>
+      </div>
+      <div id="skills">
+        <p align = "left" id = "title">Skills:</p>
+        <div class="tab">
+          <button class="tablinks" onmouseover="openTab(event, 'language')">Languages</button>
+          <button class="tablinks" onmouseover="openTab(event, 'frameworks')">Frameworks</button>
+          <button class="tablinks" onmouseover="openTab(event, 'methodology')">Methodology</button>
+          <button class="tablinks" onmouseover="openTab(event, 'vcs')">VCS</button>
+          <button class="tablinks" onmouseover="openTab(event, 'tools')">Tools</button>
+        </div>
+        <div class="tabcontent" id="language" >
+          <p>Java,JavaScript,C++,C#</p>
+        </div>
+        <div class="tabcontent" id="frameworks" >
+          <p>Spring framework,bootstrap,jQuery</p>
+        </div>
+        <div class="tabcontent" id="methodology" >
+          <p>OOP,functional programming</p>
+        </div>
+        <div class="tabcontent" id="vcs" >
+          <p>Git</p>
+        </div>
+        <div class="tabcontent" id="tools" >
+          <p>WebStorm,GitHub DeskTop,VS Code...</p>
+        </div>
+        <p align = "left" id = "title">Code example:(Gauss Method using JavaScript)</p>
+        <div id="code">
+          <code>
+            let A = [[12,0,2,0,2],<br>
+            [0,8,0,-2,0],<br>
+            [2,0,6,0,-2],<br>
+            [0,-2,0,4,0],<br>
+            [2,0,-2,0,5]];<br>
+            <br>
+            let x = [2,5,0,1,3];<br>
+            const n = 5;<br>
+            let res = [];<br>
+            for(let a of A){<br>
+            let s = 0;<br>
+            for(let i = 0;i<n;++i){<br>
+            s+=a[i]*x[i];<br>
+            }<br>
+            res.push(s); <br>
+            } <br>
+            for(let i = 0;i<n;++i){ <br>
+            A[i].push(res[i]); <br>
+            } <br>
+            for(let k = 1;k<n;++k){ <br>
+            for(let j = k;j<n;++j){ <br>
+            let m = A[j][k-1]/A[k-1][k-1]; <br>
+            for(let i = 0;i<n+1;++i){ <br>
+            A[j][i]=(A[j][i]-m*A[k-1][i]); <br>
+            } <br>
+            } <br>
+            } <br>
+            let y = []; <br>
+            for(let i = n-1;i>=0;--i){ <br>
+            y[i]=A[i][n]/A[i][i]; <br>
+            for(let c = n-1;c>i;--c){ <br>
+            y[i] = y[i] - A[i][c]*y[c]/A[i][i]; <br>
+            } <br>
+            } <br>
+            for(let i = n-1;i>=0;--i){ <br>
+            y[i]=A[i][n]/A[i][i]; <br>
+            for(let c = n-1;c>i;--c){ <br>
+            y[i] = y[i] - A[i][c]*y[c]/A[i][i]; <br>
+            } <br>
+            } <br>
+            for(let i = n-1;i>=0;--i){ <br>
+            x[i]=x[i].toFixed(16); <br>
+            } <br>
+            for(let i = n-1;i>=0;--i){<br>
+            y[i]=y[i].toFixed(16);
+            } <br>
+            console.log(x); <br>
+            console.log(y);<br>
+          </code>
+        </div>
+      </div>
+      <div id="experience">
+        <p align = "left" id = "title">Experience:</p>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Link</th>
+          </tr>
+          <tr>
+            <td>MUniverse(Spring Boot)</td>
+            <td><a href="https://github.com/DevandScorp/MUniverse_Boot" target="_blank">Click here</a></td>
+          </tr>
+          <tr>
+            <td>MUniverse(Using JPA,JDBC and JSP)</td>
+            <td><a href="https://github.com/DevandScorp/Muniverse" target="_blank">Click here</a></td>
+          </tr>
+          <tr>
+            <td>Java Labs</td>
+            <td><a href="https://github.com/DevandScorp/Labs" target="_blank">Click here</a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="education">
+        <p align = "left" id = "title">Education:</p>
+        <ul>
+          <li>Programming:
+            <ul>
+              <li>JavaRush Course</li>
+              <li>Algorithms, Part I,Coursera</li>
+              <li>Codeacademy</li>
+              <li>W3School:HTML,CSS,JS basics</li>
+              <li>University programming classes</li>
+            </ul>
+          </li>
+          <li>English:
+            <ul>
+              <li>Tutor for 3 years</li>
+              <li>Public performances at school and University</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src = "js/main.js"></script>
-    
-</body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".topnav").on("click","a", function (event) {
+          event.preventDefault();
+          let id  = $(this).attr('href'),
+          top = $(id).offset().top;
+          $('body,html').animate({scrollTop: top}, 1500);
+        });
+      });
+    </script>
+  </body>
 </html>
